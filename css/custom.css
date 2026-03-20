@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap');
+
+body {
+    font-family: 'Outfit', sans-serif;
+    color: #333;
+}
+
+h1, h2, h3, h4, h5, h6, .masthead h1 {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+
+/* Masthead styling - adding a premium dark overlay & gradient */
+.masthead {
+    background: linear-gradient(135deg, rgba(10, 25, 47, 0.9), rgba(18, 43, 75, 0.8)), url('../assets/img/portfolio-consulting.png') center center no-repeat;
+    background-size: cover;
+    color: white;
+}
+.masthead h1 {
+    color: #fff;
+    text-shadow: 0 4px 15px rgba(0,0,0,0.5);
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+.masthead h3 {
+    text-shadow: 0 4px 15px rgba(0,0,0,0.5);
+    font-weight: 300;
+}
+.masthead h3 em {
+    font-style: normal;
+    color: #0dcaf0;
+    font-weight: 600;
+}
+
+/* Enhanced Button */
+.btn-primary.btn-xl {
+    padding: 1rem 2.5rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 50px;
+    background: linear-gradient(90deg, #1D809F, #0dcaf0);
+    border: none;
+    box-shadow: 0 10px 20px rgba(29, 128, 159, 0.3);
+    transition: all 0.3s ease;
+}
+.btn-primary.btn-xl:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 25px rgba(29, 128, 159, 0.4);
+}
+
+/* Services section enhancement */
+#services {
+    background-color: #f8f9fa !important;
+    color: #212529 !important;
+}
+#services h2 { color: #1D809F; font-weight: 700; }
+#services p.text-faded { color: #555; }
+.service-icon {
+    background: #fff;
+    color: #1D809F;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.col-lg-3:hover .service-icon {
+    transform: scale(1.1);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    background: linear-gradient(90deg, #1D809F, #0dcaf0);
+    color: #fff;
+}
+
+/* Portfolio hover upgrade */
+.portfolio-item {
+    overflow: hidden;
+    position: relative;
+    border-radius: 12px;
+    margin: 15px;
+    display: block;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.portfolio-item:hover {
+    transform: scale(1.03);
+    z-index: 2;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+.portfolio-item .caption {
+    background-color: rgba(10, 25, 47, 0); /* Transparent until hover */
+    backdrop-filter: blur(0px);
+    transition: background-color 0.4s ease, backdrop-filter 0.4s ease;
+}
+.portfolio-item:hover .caption {
+    background-color: rgba(10, 25, 47, 0.85); /* Premium blue on hover */
+    backdrop-filter: blur(8px);
+}
+#portfolio .row.gx-0 {
+    margin: -15px; 
+}
+#portfolio .col-lg-6 {
+    padding: 15px;
+}
+.portfolio-item img {
+    border-radius: 12px;
+}
+
+/* Contact callout - glassmorphism */
+.callout {
+    background: linear-gradient(135deg, #f1f5f9, #e2e8f0);
+    position: relative;
+    padding: 8rem 0;
+}
+.shadow-box {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(15px);
+    padding: 4rem;
+    border-radius: 20px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.05);
+    border: 1px solid rgba(255,255,255,0.7);
+    transition: transform 0.3s ease;
+}
+.shadow-box:hover {
+    transform: translateY(-5px);
+}
+.callout h2 {
+    font-weight: 700;
+    color: #0a192f;
+    font-size: 2.5rem;
+}
+
+/* About Section */
+#about {
+    background: white !important;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+#about h2 { color: #0a192f; font-weight: 700;}
+#about p.lead {
+    font-size: 1.4rem;
+    color: #444;
+}
