@@ -3,171 +3,127 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>MethodX Solutions - IT Resourcing & Consulting</title>
-        <!-- Favicon-->
+        <meta name="description" content="MethodX Solutions - Premium IT Resourcing & Consulting" />
+        <title>MethodX Solutions | IT Resourcing & Consulting</title>
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-        <!-- Simple line icons-->
         <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css" rel="stylesheet" />
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
-        <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
-        <!-- Premium Custom CSS -->
         <link href="css/custom.css" rel="stylesheet" />
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     </head>
     <body id="page-top">
-        <!-- Navigation-->
-        <a class="menu-toggle rounded" href="#"><i class="fas fa-bars"></i></a>
-        <nav id="sidebar-wrapper">
-            <ul class="sidebar-nav">
-                <li class="sidebar-brand"><a href="#page-top">MethodX Solutions</a></li>
-                <li class="sidebar-nav-item"><a href="#page-top">Home</a></li>
-                <li class="sidebar-nav-item"><a href="#services">Services</a></li>
-                <li class="sidebar-nav-item"><a href="#portfolio">Portfolio</a></li>
-                <li class="sidebar-nav-item"><a href="#contact">Contact</a></li>
-                <li class="sidebar-nav-item"><a href="#about">About</a></li>
-            </ul>
+        
+        <!-- Top Navigation-->
+        <nav class="navbar navbar-expand-lg fixed-top premium-nav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand fw-bold" href="index.html">MethodX Solutions</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars ms-1"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="portfolio.html">Case Studies</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
-        <!-- Header-->
+        
+        <!-- Hero Header-->
         <header class="masthead d-flex align-items-center">
-            <div class="container px-4 px-lg-5 text-center">
+            <div class="container px-4 px-lg-5 text-center" data-aos="zoom-in" data-aos-duration="1000">
                 <h1 class="mb-1">MethodX Solutions</h1>
                 <h3 class="mb-5"><em>Your Trusted IT Resourcing & Consulting Partner</em></h3>
-                <a class="btn btn-primary btn-xl" href="#services">Explore Services</a>
+                <a class="btn btn-primary btn-xl" href="services.html">Explore Services</a>
             </div>
         </header>
       
-        <!-- Services-->
+        <!-- Why Choose Us -->
+        <section class="content-section bg-light" id="why-choose-us">
+            <div class="container px-4 px-lg-5 text-center">
+                <h2 class="mb-5" data-aos="fade-up">Why Choose MethodX?</h2>
+                <div class="row gx-4 gx-lg-5">
+                    <div class="col-lg-4 col-md-4 mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="100">
+                        <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-badge"></i></span>
+                        <h4><strong>Expert Talent</strong></h4>
+                        <p class="text-muted mb-0">We curate only the top 1% of engineers and IT professionals.</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="200">
+                        <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-speedometer"></i></span>
+                        <h4><strong>Rapid Delivery</strong></h4>
+                        <p class="text-muted mb-0">Accelerate your time-to-market with our agile development methodologies.</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="300">
+                        <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-globe"></i></span>
+                        <h4><strong>Scalable Solutions</strong></h4>
+                        <p class="text-muted mb-0">Future-proof enterprise architectures built to grow with your business.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Teaser -->
         <section class="content-section bg-primary text-white text-center" id="services">
             <div class="container px-4 px-lg-5">
-                <div class="content-section-heading">
-                    <h3 class="text-secondary mb-0">Services</h3>
-                    <h2 class="mb-5">What We Offer</h2>
+                <div class="content-section-heading" data-aos="fade-up">
+                    <h3 class="text-secondary mb-0">Expertise</h3>
+                    <h2 class="mb-5 text-white">Our Core Services</h2>
                 </div>
                 <div class="row gx-4 gx-lg-5">
-                    <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+                    <div class="col-lg-3 col-md-6 mb-5 mb-lg-0" data-aos="zoom-in" data-aos-delay="100">
                         <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-bulb"></i></span>
                         <h4><strong>IT Consulting</strong></h4>
-                        <p class="text-faded mb-0">Strategic guidance to align IT with your business goals.</p>
+                        <p class="text-faded mb-0">Strategic guidance to align IT with business goals.</p>
                     </div>
-                    <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+                    <div class="col-lg-3 col-md-6 mb-5 mb-lg-0" data-aos="zoom-in" data-aos-delay="200">
                         <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-people"></i></span>
-                        <h4><strong>Recruitment & Training</strong></h4>
-                        <p class="text-faded mb-0">Building talented tech teams and cultivating skills.</p>
+                        <h4><strong>Recruitment</strong></h4>
+                        <p class="text-faded mb-0">Building talented tech teams globally.</p>
                     </div>
-                    <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
+                    <div class="col-lg-3 col-md-6 mb-5 mb-md-0" data-aos="zoom-in" data-aos-delay="300">
                         <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-screen-desktop"></i></span>
-                        <h4><strong>Software Development</strong></h4>
-                        <p class="text-faded mb-0">Custom applications to drive your digital transformation.</p>
+                        <h4><strong>Development</strong></h4>
+                        <p class="text-faded mb-0">Custom apps to drive digital transformation.</p>
                     </div>
-                    <div class="col-lg-3 col-md-6">
+                    <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="400">
                         <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-layers"></i></span>
                         <h4><strong>Staff Augmentation</strong></h4>
-                        <p class="text-faded mb-0">Flexible resourcing to scale your team efficiently.</p>
+                        <p class="text-faded mb-0">Flexible resourcing to scale your team.</p>
                     </div>
+                </div>
+                <div class="mt-5" data-aos="fade-up">
+                    <a class="btn btn-light btn-xl" href="services.html">View All Services Detalis</a>
                 </div>
             </div>
         </section>
-        <!-- Portfolio-->
-        <section class="content-section" id="portfolio">
-            <div class="container px-4 px-lg-5">
-                <div class="content-section-heading text-center">
-                    <h3 class="text-secondary mb-0">Case Studies</h3>
-                    <h2 class="mb-5">Recent Projects</h2>
-                </div>
-                <div class="row gx-0">
-                    <div class="col-lg-6">
-                        <a class="portfolio-item" href="#!">
-                            <div class="caption">
-                                <div class="caption-content">
-                                    <div class="h2">IT Consulting</div>
-                                    <p class="mb-0">Strategic enterprise architecture design and implementation.</p>
-                                </div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio-consulting.png" alt="IT Consulting" />
-                        </a>
-                    </div>
-                    <div class="col-lg-6">
-                        <a class="portfolio-item" href="#!">
-                            <div class="caption">
-                                <div class="caption-content">
-                                    <div class="h2">Recruitment</div>
-                                    <p class="mb-0">Scaling top-tier development teams for global clients.</p>
-                                </div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio-recruitment.png" alt="Recruitment" />
-                        </a>
-                    </div>
-                    <div class="col-lg-6">
-                        <a class="portfolio-item" href="#!">
-                            <div class="caption">
-                                <div class="caption-content">
-                                    <div class="h2">Software Development</div>
-                                    <p class="mb-0">Custom digital platforms engineered for performance.</p>
-                                </div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio-dev.png" alt="Software Development" />
-                        </a>
-                    </div>
-                    <div class="col-lg-6">
-                        <a class="portfolio-item" href="#!">
-                            <div class="caption">
-                                <div class="caption-content">
-                                    <div class="h2">Staff Augmentation</div>
-                                    <p class="mb-0">Providing flexible expert resources on demand.</p>
-                                </div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio-staff.png" alt="Staff Augmentation" />
-                        </a>
-                    </div>
-                </div>
+
+        <!-- Callout to Portfolio -->
+        <section class="callout text-center" style="padding: 6rem 0; background: linear-gradient(135deg, #f1f5f9, #e2e8f0);">
+            <div class="container px-4 px-lg-5" data-aos="fade-up">
+                <h2 class="mb-4" style="color: #0a192f; font-weight: 700;">See Our Impact in Action</h2>
+                <p class="lead mb-5 text-muted">From Fortune 500 cloud migrations to agile startup engineering, explore our success stories.</p>
+                <a class="btn btn-primary btn-xl" href="portfolio.html">Read Our Case Studies</a>
             </div>
         </section>
-        <!-- Contactus-->
-        <section class="callout" id="contact">
-            <div class="container mt-5">
-                <div class="row justify-content-center">
-                    <div class="col-md-6 text-center shadow-box">
-                        <h2 class="mb-4">Contact Us</h2>
-                        <p class="lead mb-4">Ready to start your next big project? Get in touch with our team of experts today.</p>
-                        <p class="mb-2"><i class="fas fa-envelope fa-2x mb-2 text-primary"></i> <br/> <a href="mailto:info@methodxsol.com" class="text-dark" style="font-size: 1.25rem; text-decoration: none;">info@methodxsol.com</a></p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Call to Action-->
-        <!-- <section class="content-section bg-primary text-white">
-            <div class="container px-4 px-lg-5 text-center">
-                <h2 class="mb-4">The buttons below are impossible to resist...</h2>
-                <a class="btn btn-xl btn-light me-4" href="#!">Click Me!</a>
-                <a class="btn btn-xl btn-dark" href="#!">Look at Me!</a>
-            </div>
-        </section> -->
-        
-          <!-- About-->
-          <section class="content-section bg-light" id="about">
-            <div class="container px-4 px-lg-5 text-center">
+
+        <!-- About Teaser -->
+        <section class="content-section bg-light text-center" style="padding-top: 5rem; padding-bottom: 5rem;">
+            <div class="container px-4 px-lg-5" data-aos="fade-up">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
-                    <div class="col-lg-10">
-                        <h2>About MethodX Solutions</h2>
-                        <p class="lead mb-5">
-                            We are an emerging IT resourcing and consulting firm dedicated to helping businesses scale with top-tier tech talent and innovative software solutions.
-                        </p>
-                        <a class="btn btn-dark btn-xl" href="#contact">Contact Us</a>
+                    <div class="col-lg-8">
+                        <h2>Who is MethodX Solutions?</h2>
+                        <p class="lead mb-4 mt-4 text-muted">A premier IT resourcing and consulting firm bridging the gap between top-tier tech talent and innovative organizations.</p>
+                        <a class="btn btn-dark btn-xl" href="about.html">Learn Our Story</a>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- Map-->
-        <!-- <div class="map" id="contact">
-            <iframe src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
-            <br />
-            <small><a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A"></a></small>
-        </div> -->
+
         <!-- Footer-->
         <footer class="footer text-center">
             <div class="container px-4 px-lg-5">
@@ -178,18 +134,18 @@
                     <li class="list-inline-item">
                         <a class="social-link rounded-circle text-white mr-3" href="#!"><i class="icon-social-twitter"></i></a>
                     </li>
-                    <!-- <li class="list-inline-item">
-                        <a class="social-link rounded-circle text-white" href="#!"><i class="icon-social-github"></i></a>
-                    </li> -->
                 </ul>
                 <p class="text-muted small mb-0">Copyright &copy; MethodX Solutions LLC 2026</p>
             </div>
         </footer>
-        <!-- Scroll to Top Button-->
+        
         <a class="scroll-to-top rounded" href="#page-top"><i class="fas fa-angle-up"></i></a>
-        <!-- Bootstrap core JS-->
+        
+        <!-- Scripts -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>AOS.init({ duration: 800, once: true });</script>
+
     </body>
 </html>
